@@ -11,7 +11,7 @@
 Plugin Name: Sendloop Subscribe WP Plugin
 Plugin URI: http://sendloop.com/
 Description: With this plug-in, blog owner will be able to "link" his Sendloop account with WordPress and start accepting email list subscriptions on his blog. Use widget to show the newsletter subscribe form. You may have as many forms as you need - each linked to the one of your subscriber lists. 
-Version: 1.0
+Version: 1.0.2
 Author: Sendloop.com <support@sendloop.com>
 Author URI: http://sendloop.com/
 Help URI: http://sendloop.com/help/integration/wordpress/
@@ -24,7 +24,7 @@ License: MIT License
     2. Custom fields: checkboxes submission
 */
 
-define('SENDLOOP_SUBSCRIBE', '1.0');
+define('SENDLOOP_SUBSCRIBE', '1.0.2');
 define('SENDLOOP_PLUGIN_NAME', 'Sendloop Subscribe');
 define('SL_SUBSCRIBE_ACTION', WP_PLUGIN_URL . '/sendloop/dispatch.php');
 
@@ -617,14 +617,7 @@ class SendloopSubscribeDispatcher {
 				elseif ('Confirmation Pending' == $response['SubscriptionStatus'])
 					$this->_setResponse($this->_successMessages['subscription_success_pending'], true);
 			} else {
-				if (count($response['ErrorCode'])) {
-					$this->_setResponse(''); // show code by default
-					// we need to show up only first problem which we know
-					foreach ($response['ErrorCode'] as $errorCode) {
-						if (isset($this->_subscriptionErrors[$errorCode]))
-							$this->_setResponse($this->_subscriptionErrors[$errorCode]);
-					}
-				}
+				$this->_setResponse($response['ErrorMessage'],false);
 			}
 		} catch (Exception $e) {
 			$this->_setResponse($e);
@@ -651,14 +644,7 @@ class SendloopSubscribeDispatcher {
 			if ($response['Success']) {
 				$this->_setResponse($this->_successMessages['unsubscription_success'], true);
 			} else {
-				if (count($response['ErrorCode'])) {
-					$this->_setResponse(''); // show code by default
-					// we need to show up only first problem which we know
-					foreach ($response['ErrorCode'] as $errorCode) {
-						if (isset($this->_subscriptionErrors[$errorCode]))
-							$this->_setResponse($this->_unsubscriptionErrors[$errorCode]);
-					}
-				}
+				$this->_setResponse($response['ErrorMessage'],false);
 			}
 		} catch (Exception $e) {
 			$this->_setResponse($e);
