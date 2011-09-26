@@ -1,6 +1,5 @@
 === Sendloop Subscribe ===
 Contributors: Sendloop.com <support@sendloop.com>, http://sendloop.com
-Plugin Name: sendloop_subscribe
 Tags: sendloop, subscribe, newsletter
 Requires at least: 3.0
 Tested up to: 3.2.1

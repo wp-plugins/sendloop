@@ -26,7 +26,7 @@ License: MIT License
 
 define('SENDLOOP_SUBSCRIBE', '1.0');
 define('SENDLOOP_PLUGIN_NAME', 'Sendloop Subscribe');
-define('SL_SUBSCRIBE_ACTION', WP_PLUGIN_URL . '/sendloop_subscribe/dispatch.php');
+define('SL_SUBSCRIBE_ACTION', WP_PLUGIN_URL . '/sendloop/dispatch.php');
 
 add_action('admin_menu', array('SendloopSubscribeAdmin', 'menu'));
 add_filter('init', array('SendloopSubscribeFront', 'init'));
@@ -34,7 +34,7 @@ add_action('wp_ajax_sl_test_connection', array('SendloopSubscribeAdmin', 'testCo
 add_action('wp_ajax_sl_get_subscriber_lists', array('SendloopSubscribeAdmin', 'getLists'));
 add_action('wp_ajax_sl_get_subscriber_list_fields', array('SendloopSubscribeAdmin', 'getListCustomFields'));
 add_action('init', array('SendloopSubscribeWidget', 'init'), 1);
-load_plugin_textdomain('sl_subscribe', '/wp-content/plugins/sendloop_subscribe/langs/');
+load_plugin_textdomain('sl_subscribe', '/wp-content/plugins/sendloop/langs/');
 
 $pluginOptions = array(
 	'sl_api_key' => __('Sendloop.com API key'),
