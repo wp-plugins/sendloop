@@ -3,7 +3,7 @@ Contributors: Sendloop.com <support@sendloop.com>, http://sendloop.com
 Tags: sendloop, subscribe, newsletter
 Requires at least: 3.0
 Tested up to: 3.2.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 
 With this plug-in, blog owner will be able to "link" his Sendloop account with WordPress and start accepting email list subscriptions on his blog.
 
