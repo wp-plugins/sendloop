@@ -11,7 +11,7 @@
 Plugin Name: Sendloop Subscribe WP Plugin
 Plugin URI: http://sendloop.com/
 Description: With this plug-in, blog owner will be able to "link" his Sendloop account with WordPress and start accepting email list subscriptions on his blog. Use widget to show the newsletter subscribe form. You may have as many forms as you need - each linked to the one of your subscriber lists. 
-Version: 0.3.3
+Version: 1.0
 Author: Sendloop.com <support@sendloop.com>
 Author URI: http://sendloop.com/
 Help URI: http://sendloop.com/help/integration/wordpress/
@@ -24,7 +24,7 @@ License: MIT License
     2. Custom fields: checkboxes submission
 */
 
-define('SENDLOOP_SUBSCRIBE', '0.3.1');
+define('SENDLOOP_SUBSCRIBE', '1.0');
 define('SENDLOOP_PLUGIN_NAME', 'Sendloop Subscribe');
 define('SL_SUBSCRIBE_ACTION', WP_PLUGIN_URL . '/sendloop_subscribe/dispatch.php');
 
