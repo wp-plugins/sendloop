@@ -3,7 +3,7 @@ Contributors: Sendloop.com <support@sendloop.com>, http://sendloop.com
 Tags: sendloop, subscribe, newsletter
 Requires at least: 3.0
 Tested up to: 3.2.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 
 With this plug-in, blog owner will be able to "link" his Sendloop account with WordPress and start accepting email list subscriptions on his blog.
 
@@ -25,6 +25,9 @@ PS: You'll need an [sendloop.com API key](http://your_account.sendloop.com/setti
 Upload plugin folder to your blog (wp-content/plugins/), activate it, then enter your [sendloop.com credentials](http://your_account.sendloop.com/settings/api/).
 
 == Changelog ==
+
+= 1.0.2 =
+* Display subscription errors on form
 
 = 1.0 =
 * Using Sendloop API 3
