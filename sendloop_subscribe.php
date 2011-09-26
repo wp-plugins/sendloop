@@ -1,6 +1,6 @@
 <?php
 /**
-* @version $Id$ 
+* @version $Id$
 * @author Sendloop.com <support@sendloop.com>
 * @see http://sendloop.com/
 * @see Help: http://sendloop.com/help/integration/wordpress/
