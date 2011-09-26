@@ -24,7 +24,7 @@ License: MIT License
     2. Custom fields: checkboxes submission
 */
 
-define('SENDLOOP_SUBSCRIBE', '1.0');
+define('SENDLOOP_SUBSCRIBE', '1.0.1');
 define('SENDLOOP_PLUGIN_NAME', 'Sendloop Subscribe');
 define('SL_SUBSCRIBE_ACTION', WP_PLUGIN_URL . '/sendloop/dispatch.php');
 
