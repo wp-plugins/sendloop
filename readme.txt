@@ -2,8 +2,8 @@
 Contributors: sendloop
 Tags: email marketing, mail list management
 Requires at least: 3.0
-Tested up to: 3.5.1
-Stable tag: 2.0
+Tested up to: 4.1.1
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://sendloop.com
 
@@ -15,6 +15,4 @@ Sendloop is the easiest to use email marketing and mail list management service.
 
 For installation instructions, please visit:
 http://sendloop.com/help/article/service-integration-009/wordpress-integration#installation_and_setup
-
-
 
