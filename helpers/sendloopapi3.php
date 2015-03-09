@@ -3,7 +3,7 @@
  * Sendloop API Wrapper
  * @copyright Sendloop.com
  * @author Sendloop.com
- * @version 1.1
+ * @version 1.2
  * @license GNU GPL v3
  */
 
@@ -55,11 +55,11 @@ class SendloopAPI3
 	{
 		if (is_null($this->Subdomain) == true)
 		{
-			$APIURL = 'http://'.$this->APIBaseURL . '/api/v3/' . $APICommand . '/' . $this->ResponseFormat;
+			$APIURL = 'https://'.$this->APIBaseURL . '/api/v3/' . $APICommand . '/' . $this->ResponseFormat;
 		}
 		else
 		{
-			$APIURL = 'http://' . $this->Subdomain . '.' . $this->APIBaseURL . '/api/v3/' . $APICommand . '/' . $this->ResponseFormat;
+			$APIURL = 'https://' . $this->Subdomain . '.' . $this->APIBaseURL . '/api/v3/' . $APICommand . '/' . $this->ResponseFormat;
 		}
 		return $APIURL;
 	}
