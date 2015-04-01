@@ -3,7 +3,7 @@
 Plugin Name: Sendloop Subscribe
 Plugin URI: http://sendloop.com/wordpress
 Description: Add mail list subscription form to your WordPress powered blog or website
-Version: 2.0.3
+Version: 2.0.4
 Author: Sendloop
 Author URI: http://sendloop.com
 License: GPL2
