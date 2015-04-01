@@ -3,7 +3,7 @@ Contributors: sendloop
 Tags: email marketing, mail list management
 Requires at least: 3.0
 Tested up to: 4.1.1
-Stable tag: 2.0.1
+Stable tag: 2.0.2
 License: GPLv2 or later
 License URI: http://sendloop.com
 
