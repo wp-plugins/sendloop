@@ -11,9 +11,9 @@ class SendloopAPI3
 {
 	private $APIKey = '';
 	private $APICommand = '';
-	private $Subdomain = '';
+	private $Subdomain = 'app';
 	private $ResponseFormat = '';
-	private $APIBaseURL = 'sendloop.com';
+	private $APIBaseURL = 'app.sendloop.com';
 	public $Result = '';
 
 	public function __construct($APIKey, $Subdomain = null, $ResponseFormat = 'json')
